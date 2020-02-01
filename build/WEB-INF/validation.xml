@@ -1,0 +1,4571 @@
+<!DOCTYPE form-validation PUBLIC
+          "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0//EN"
+          "http://jakarta.apache.org/struts/dtds/validation_1_1.dtd">
+      
+ <form-validation>
+ <formset>
+ 
+ 
+ <form name="PropertyForm">
+   <field 
+      property="property"
+      depends="required">
+      <arg0 key="PropertyForm.property"/>
+    </field>
+    
+   
+    <field 
+      property="address"
+      depends="required">
+      <arg0 key="PropertyForm.address"/>
+    </field>
+    
+        
+   <!--  
+  <field 
+      property="rent"
+      depends="required,integer">
+      <arg0 key="PropertyForm.rent"/>
+    </field>
+    
+ 
+    <field 
+      property="securitydeposit"
+      depends="required,integer">
+      <arg0 key="PropertyForm.securitydeposit"/>
+    </field>
+    
+    -->
+     <field 
+      property="notes"
+      depends="required">
+      <arg0 key="PropertyForm.notes"/>
+    </field>
+    
+    <field 
+      property="analimilities"
+      depends="required">
+      <arg0 key="PropertyForm.analimilities"/>
+    </field>
+    
+   
+    
+    
+     <field 
+      property="percentage"
+      depends="required">
+      <arg0 key="PropertyForm.percentage"/>
+    </field>
+    
+    
+    
+  </form>
+ 
+ 
+ <form name="OwnerEmployeeForm">
+    
+     <field 
+      property="phoneno"
+      depends="required,integer">
+      <arg0 key="OwnerEmployeeForm.phoneno"/>
+    </field>
+ 
+ </form>
+ 
+ 
+ 
+ 
+ <form name="PropertyParkingSlot">
+    
+     <field 
+      property="parkingtype"
+      depends="required">
+      <arg0 key="PropertyParkingSlot.parkingtype"/>
+    </field>
+ 
+ 	<field 
+      property="parkingslot"
+      depends="required">
+      <arg0 key="PropertyParkingSlot.parkingslot"/>
+    </field>
+    
+ </form>
+ 
+ 
+ <form name="ParkingForm">
+    
+     <field 
+      property="property_oid"
+      depends="required,integer">
+      <arg0 key="ParkingForm.property_oid"/>
+    </field>
+ 
+ </form>
+ 
+ 
+ 
+ 
+ <form name="EmployeeForm">
+    
+    <field 
+      property="firstname"
+      depends="required">
+      <arg0 key="EmployeeForm.firstname"/>
+    </field>
+    
+    <field 
+      property="lastname"
+      depends="required">
+      <arg0 key="EmployeeForm.lastname"/>
+    </field>
+    
+    
+     <field 
+      property="phoneno"
+      depends="required,integer">
+      <arg0 key="EmployeeForm.phoneno"/>
+    </field>
+    
+    <field 
+      property="dateofbirth"
+      depends="required">
+      <arg0 key="EmployeeForm.dateofbirth"/>
+    </field>
+    
+    <field 
+      property="employementdate"
+      depends="required">
+      <arg0 key="EmployeeForm.employementdate"/>
+    </field>
+    
+    
+    <field 
+      property="employeeid"
+      depends="required">
+      <arg0 key="EmployeeForm.employeeid"/>
+    </field>
+    
+ </form>
+ 
+  <form name="DashEmployeeForm">
+  
+     <field property="firstname"
+      depends="required">
+      <arg0 key="DashEmployeeForm.firstname"/>
+    </field>
+    
+    <field property="lastname"
+      depends="required">
+      <arg0 key="DashEmployeeForm.lastname"/>
+    </field>
+    
+      
+     <field property="phoneno"
+      depends="required,integer">
+      <arg0 key="DashEmployeeForm.phoneno"/>
+    </field>
+    
+    <field  property="dateofbirth"
+      depends="required">
+      <arg0 key="DashEmployeeForm.dateofbirth"/>
+    </field>
+    
+    <field property="employementdate"
+      depends="required">
+      <arg0 key="DashEmployeeForm.employementdate"/>
+    </field>
+    
+    <field property="employeeid"
+      depends="required">
+      <arg0 key="DashEmployeeForm.employeeid"/>
+    </field>
+        
+ </form> 
+  
+ 
+   <form name="EmployeeAdvanceForm">
+    
+     <field 
+      property="advanceamount"
+      depends="required,float">
+      <arg0 key="EmployeeAdvanceForm.advanceamount"/>
+    </field>
+    
+    <field 
+      property="amountdeduction"
+      depends="required,float">
+      <arg0 key="EmployeeAdvanceForm.amountdeduction"/>
+    </field>
+    
+    
+    <field 
+      property="deductionfrequency"
+      depends="required">
+      <arg0 key="EmployeeAdvanceForm.deductionfrequency"/>
+    </field>
+    
+ </form>
+ 
+ 
+ <form name="AdvancePaymentReportForm">
+    
+     <field 
+      property="fromdate"
+      depends="required">
+      <arg0 key="AdvancePaymentReportForm.fromdate"/>
+    </field>
+    
+    <field 
+      property="todate"
+      depends="required">
+      <arg0 key="AdvancePaymentReportForm.todate"/>
+    </field>
+    
+    
+ </form>
+ 
+ 
+ 
+ 
+ <!-- Tenant Validation  -->
+ 
+ 
+    <form name="TenantForm">
+     <field 
+      property="name"
+      depends="required">
+      <arg0 key="TenantForm.name"/>
+    </field>
+    
+     <field 
+      property="age"
+      depends="required,integer">
+      <arg0 key="TenantForm.age"/>
+    </field>
+    
+    
+    
+     <field 
+      property="fathername"
+      depends="required">
+      <arg0 key="TenantForm.fathername"/>
+    </field>
+    
+    <field 
+      property="occupation"
+      depends="required">
+      <arg0 key="TenantForm.occupation"/>
+    </field>
+    
+    <field 
+      property="email"
+      depends="required,email">
+      <arg0 key="TenantForm.email"/>
+    </field>
+    
+   <field 
+      property="address1"
+      depends="required">
+      <arg0 key="TenantForm.address1"/>
+    </field>
+    
+   <field 
+      property="address2"
+      depends="required">
+      <arg0 key="TenantForm.address2"/>
+    </field>
+   
+   <field 
+      property="address3"
+      depends="required">
+      <arg0 key="TenantForm.address3"/>
+   </field>
+   
+   <field 
+      property="phone"
+      depends="required">
+      <arg0 key="TenantForm.phone"/>
+   </field>
+   
+   
+   
+   <field 
+      property="city"
+      depends="required">
+      <arg0 key="TenantForm.city"/>
+   </field>
+   
+   
+   <field 
+      property="state"
+      depends="required">
+      <arg0 key="TenantForm.state"/>
+   </field>
+    
+    
+    <field 
+      property="country"
+      depends="required">
+      <arg0 key="TenantForm.country"/>
+   </field>
+   
+    <field 
+      property="pincode"
+      depends="required,integer">
+      <arg0 key="TenantForm.pincode"/>
+   </field>
+    
+     <field 
+      property="idno"
+      depends="required">
+      <arg0 key="TenantForm.idno"/>
+   </field>
+   
+      <field 
+      property="issueautho"
+      depends="required">
+      <arg0 key="TenantForm.issueautho"/>
+   </field>
+   
+   <field 
+      property="contactmobileno"
+      depends="required">
+      <arg0 key="TenantForm.contactmobileno"/>
+   </field>
+   
+   <field 
+      property="purposeoflease"
+      depends="required">
+      <arg0 key="TenantForm.purposeoflease"/>
+   </field>
+   
+    
+    <field 
+      property="moveindate"
+      depends="required">
+      <arg0 key="TenantForm.moveindate"/>
+   </field>
+   
+    <field 
+      property="leaseperiod"
+      depends="required">
+      <arg0 key="TenantForm.leaseperiod"/>
+   </field>
+   
+    <field 
+      property="unitrent"
+      depends="required,integer">
+      <arg0 key="TenantForm.unitrent"/>
+   </field>
+   
+    <field 
+      property="unitdeposit"
+      depends="required,integer">
+      <arg0 key="TenantForm.unitdeposit"/>
+   </field>
+   
+    <field 
+      property="unitperiodfrom"
+      depends="required">
+      <arg0 key="TenantForm.unitperiodfrom"/>
+   </field>
+   
+    <field 
+      property="unitperiodto"
+      depends="required">
+      <arg0 key="TenantForm.unitperiodto"/>
+   </field>
+   
+    
+    <field 
+      property="unitbilldate"
+      depends="required">
+      <arg0 key="TenantForm.unitbilldate"/>
+   </field>
+   
+    <field 
+      property="unitduedate"
+      depends="required">
+      <arg0 key="TenantForm.unitduedate"/>
+   </field>
+   
+    <field 
+      property="unitlatefeedate"
+      depends="required">
+      <arg0 key="TenantForm.unitlatefeedate"/>
+   </field>
+   
+    <field 
+      property="unitincrement"
+      depends="required,integer">
+      <arg0 key="TenantForm.unitincrement"/>
+   </field>
+   
+    <field 
+      property="bouncecheckfee"
+      depends="required,integer">
+      <arg0 key="TenantForm.bouncecheckfee"/>
+   </field>
+    
+    
+    
+    <field 
+      property="latefeetype"
+      depends="required">
+      <arg0 key="TenantForm.latefeetype"/>
+   </field>
+   
+    <field 
+      property="latefeeamount"
+      depends="required,integer">
+      <arg0 key="TenantForm.latefeeamount"/>
+   </field>
+   
+    <field 
+      property="maxlatefeeamount"
+      depends="required,integer">
+      <arg0 key="TenantForm.maxlatefeeamount"/>
+   </field>
+    
+    <field 
+      property="east"
+      depends="required">
+      <arg0 key="TenantForm.east"/>
+   </field>
+    
+    
+    
+    <field 
+      property="west"
+      depends="required">
+      <arg0 key="TenantForm.west"/>
+   </field>
+   
+    <field 
+      property="north"
+      depends="required">
+      <arg0 key="TenantForm.north"/>
+   </field>
+   
+    <field 
+      property="south"
+      depends="required">
+      <arg0 key="TenantForm.south"/>
+   </field>
+    
+    
+    <field 
+      property="notes"
+      depends="required">
+      <arg0 key="TenantForm.notes"/>
+   </field>
+    
+    
+    
+    
+ </form>
+ 
+ 
+ <form name="PGTenantForm">
+    
+     <field 
+      property="name"
+      depends="required">
+      <arg0 key="PGTenantForm.name"/>
+    </field>
+    
+     <field 
+      property="age"
+      depends="required">
+      <arg0 key="PGTenantForm.age"/>
+    </field>
+    
+     <field 
+      property="fathername"
+      depends="required">
+      <arg0 key="PGTenantForm.fathername"/>
+    </field>
+    
+     
+     <field 
+      property="occupation"
+      depends="required">
+      <arg0 key="PGTenantForm.occupation"/>
+    </field>
+     
+     
+     <field 
+      property="email"
+      depends="required">
+      <arg0 key="PGTenantForm.email"/>
+    </field>
+     
+    <field 
+      property="address1"
+      depends="required">
+      <arg0 key="PGTenantForm.address1"/>
+    </field>
+    
+     <field 
+      property="address2"
+      depends="required">
+      <arg0 key="PGTenantForm.address2"/>
+    </field>
+    
+     <field 
+      property="address3"
+      depends="required">
+      <arg0 key="PGTenantForm.address3"/>
+    </field>
+    
+     <field 
+      property="phone"
+      depends="required">
+      <arg0 key="PGTenantForm.phone"/>
+    </field>
+     
+     
+     <field 
+      property="city"
+      depends="required">
+      <arg0 key="PGTenantForm.city"/>
+    </field>
+     
+      <field 
+      property="state"
+      depends="required">
+      <arg0 key="PGTenantForm.state"/>
+    </field>
+    
+      
+     <field 
+      property="country"
+      depends="required">
+      <arg0 key="PGTenantForm.country"/>
+    </field>  
+      
+      <field 
+      property="pincode"
+      depends="required">
+      <arg0 key="PGTenantForm.pincode"/>
+    </field>  
+    
+      
+     <field 
+      property="idno"
+      depends="required">
+      <arg0 key="PGTenantForm.idno"/>
+    </field>    
+      
+    <field 
+      property="issueautho"
+      depends="required">
+      <arg0 key="PGTenantForm.issueautho"/>
+    </field> 
+      
+    <field 
+      property="contactmobileno"
+      depends="required">
+      <arg0 key="PGTenantForm.contactmobileno"/>
+    </field> 
+    
+      
+      
+      <field 
+      property="moveindate"
+      depends="required">
+      <arg0 key="PGTenantForm.moveindate"/>
+    </field>
+      
+    <field 
+      property="leaseperiod"
+      depends="required">
+      <arg0 key="PGTenantForm.leaseperiod"/>
+    </field>
+    
+     <field 
+      property="unitrent"
+      depends="required">
+      <arg0 key="PGTenantForm.unitrent"/>
+    </field> 
+      
+   <field 
+      property="unitdeposit"
+      depends="required">
+      <arg0 key="PGTenantForm.unitdeposit"/>
+    </field> 
+      
+      
+     <field 
+      property="unitperiodfrom"
+      depends="required">
+      <arg0 key="PGTenantForm.unitperiodfrom"/>
+    </field>
+      
+   <field 
+      property="unitperiodto"
+      depends="required">
+      <arg0 key="PGTenantForm.unitperiodto"/>
+    </field>
+      
+     <field 
+      property="unitbilldate"
+      depends="required">
+      <arg0 key="PGTenantForm.unitbilldate"/>
+    </field>  
+      
+      <field 
+      property="unitduedate"
+      depends="required">
+      <arg0 key="PGTenantForm.unitduedate"/>
+    </field>  
+    
+      
+      
+    <field 
+      property="unitlatefeedate"
+      depends="required">
+      <arg0 key="PGTenantForm.unitlatefeedate"/>
+    </field>    
+      
+      <field 
+      property="unitincrement"
+      depends="required">
+      <arg0 key="PGTenantForm.unitincrement"/>
+    </field> 
+      
+    <field 
+      property="bouncecheckfee"
+      depends="required">
+      <arg0 key="PGTenantForm.bouncecheckfee"/>
+    </field> 
+      
+     <field 
+      property="latefeeamount"
+      depends="required">
+      <arg0 key="PGTenantForm.latefeeamount"/>
+    </field>  
+      
+       <field 
+      property="maxlatefeeamount"
+      depends="required">
+      <arg0 key="PGTenantForm.maxlatefeeamount"/>
+    </field>  
+    
+       <field 
+      property="east"
+      depends="required">
+      <arg0 key="PGTenantForm.east"/>
+    </field>   
+       
+       <field 
+      property="west"
+      depends="required">
+      <arg0 key="PGTenantForm.west"/>
+    </field>  
+       
+       
+       <field 
+      property="north"
+      depends="required">
+      <arg0 key="PGTenantForm.north"/>
+    </field>  
+    
+       
+       <field 
+      property="south"
+      depends="required">
+      <arg0 key="PGTenantForm.south"/>
+    </field>  
+       
+        <field 
+      property="file"
+      depends="required">
+      <arg0 key="PGTenantForm.file"/>
+    </field> 
+    
+        <field 
+      property="notes"
+      depends="required">
+      <arg0 key="PGTenantForm.notes"/>
+    </field> 
+       
+ </form>
+ 
+ 
+ 
+ <form name="validateReportForm">
+   <field 
+      property="frommonth"
+      depends="required">
+      <arg0 key="validateReportForm.frommonth"/>
+    </field>
+    
+   
+    <field 
+      property="tomonth"
+      depends="required">
+      <arg0 key="validateReportForm.tomonth"/>
+    </field>
+    
+    
+  </form>
+  
+ 
+ <!-- End Tenant Validation  -->
+ 
+ <!--Start of Company Tenant Validation  -->
+ 
+ 
+ 
+ <form name="CompanyTenantForm">
+     <field 
+      property="name"
+      depends="required">
+      <arg0 key="CompanyTenantForm.name"/>
+    </field>
+    
+     <field 
+      property="registereddate"
+      depends="required">
+      <arg0 key="CompanyTenantForm.registereddate"/>
+    </field>
+    
+     <field 
+      property="companytype"
+      depends="required">
+      <arg0 key="CompanyTenantForm.companytype"/>
+    </field>
+    
+     <field 
+      property="fax"
+      depends="required">
+      <arg0 key="CompanyTenantForm.fax"/>
+    </field>
+    
+     <field 
+      property="registerationno"
+      depends="required">
+      <arg0 key="CompanyTenantForm.registerationno"/>
+    </field>
+    
+    <field 
+      property="phone"
+      depends="required">
+      <arg0 key="CompanyTenantForm.phone"/>
+    </field>
+    
+      <field 
+      property="email"
+      depends="required,email">
+      <arg0 key="CompanyTenantForm.email"/>
+    </field>
+    
+    <field 
+      property="contactemail"
+      depends="required,email">
+      <arg0 key="CompanyTenantForm.contactemail"/>
+    </field>
+    
+    <field 
+      property="contactmobileno"
+      depends="required">      
+    </field>
+    
+    <field 
+      property="address1"
+      depends="required">
+      <arg0 key="CompanyTenantForm.address1"/>
+    </field>
+    <field 
+      property="address2"
+      depends="required">
+      <arg0 key="CompanyTenantForm.address2"/>
+    </field>
+    <field 
+      property="address3"
+      depends="required">
+      <arg0 key="CompanyTenantForm.address3"/>
+    </field>
+    
+     <field 
+      property="pincode"
+      depends="required,integer">
+      <arg0 key="CompanyTenantForm.pincode"/>
+    </field>
+    
+     
+     
+     <field 
+      property="country"
+      depends="required">
+      <arg0 key="CompanyTenantForm.country"/>
+    </field>
+    
+     <field 
+      property="purposeoflease"
+      depends="required">
+      <arg0 key="CompanyTenantForm.purposeoflease"/>
+    </field>
+    
+     <field 
+      property="contactname"
+      depends="required">
+      <arg0 key="CompanyTenantForm.contactname"/>
+    </field>
+    
+     <field 
+      property="contactphone"
+      depends="required">
+      <arg0 key="CompanyTenantForm.contactphone"/>
+    </field>
+    
+     <field 
+      property="contactmobileno"
+      depends="required">
+      <arg0 key="CompanyTenantForm.contactmobileno"/>
+    </field>
+    
+     <field 
+      property="contactemail"
+      depends="required,email">
+      <arg0 key="CompanyTenantForm.contactemail"/>
+    </field>
+    
+     
+     <field 
+      property="frequency"
+      depends="required">
+      <arg0 key="CompanyTenantForm.frequency"/>
+    </field>
+    
+   
+     <field 
+      property="moveindate"
+      depends="required">
+      <arg0 key="CompanyTenantForm.moveindate"/>
+    </field>
+    <field 
+      property="leaseperiod"
+      depends="required">
+      <arg0 key="CompanyTenantForm.leaseperiod"/>
+    </field>
+   
+   <field 
+      property="billtype"
+      depends="required">
+      <arg0 key="CompanyTenantForm.billtype"/>
+    </field>
+   <field 
+      property="unitrent"
+      depends="required,integer">
+      <arg0 key="CompanyTenantForm.unitrent"/>
+    </field>
+   <field 
+      property="unitdeposit"
+      depends="required,integer">
+      <arg0 key="CompanyTenantForm.unitdeposit"/>
+    </field>
+   <field 
+      property="unitperiodfrom"
+      depends="required">
+      <arg0 key="CompanyTenantForm.unitperiodfrom"/>
+    </field>
+   
+    <field 
+      property="unitperiodto"
+      depends="required">
+      <arg0 key="CompanyTenantForm.unitperiodto"/>
+    </field>
+   
+   <field 
+      property="unitbilldate"
+      depends="required">
+      <arg0 key="CompanyTenantForm.unitbilldate"/>
+    </field>
+    <field 
+      property="unitduedate"
+      depends="required">
+      <arg0 key="CompanyTenantForm.unitduedate"/>
+    </field>
+   
+   <field 
+      property="unitlatefeedate"
+      depends="required">
+      <arg0 key="CompanyTenantForm.unitlatefeedate"/>
+    </field>
+    
+    <field 
+      property="unitincrement"
+      depends="required,integer">
+      <arg0 key="CompanyTenantForm.unitincrement"/>
+    </field>
+    
+   <field 
+      property="east"
+      depends="required">
+      <arg0 key="CompanyTenantForm.east"/>
+    </field>
+   
+   <field 
+      property="west"
+      depends="required">
+      <arg0 key="CompanyTenantForm.west"/>
+    </field>
+    <field 
+      property="north"
+      depends="required">
+      <arg0 key="CompanyTenantForm.north"/>
+    </field>
+    <field 
+      property="south"
+      depends="required">
+      <arg0 key="CompanyTenantForm.south"/>
+    </field>
+     
+     <field 
+      property="notes"
+      depends="required">
+      <arg0 key="CompanyTenantForm.notes"/>
+    </field>
+     
+  </form>
+ 
+ 
+ <form name="CompanyTenantConfimationForm">
+     <field 
+      property="file"
+      depends="required">
+      <arg0 key="CompanyTenantConfimationForm.file"/>
+    </field>
+    
+  </form>
+ 
+ 
+ 
+ 
+ 
+ <form name="DashBoardCompanyTenantForm">
+     <field 
+      property="name"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.name"/>
+    </field>
+    
+     <field 
+      property="registereddate"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.registereddate"/>
+    </field>
+    
+     <field 
+      property="companytype"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.companytype"/>
+    </field>
+    
+     <field 
+      property="fax"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.fax"/>
+    </field>
+    
+     <field 
+      property="registerationno"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.registerationno"/>
+    </field>
+    
+    <field 
+      property="phone"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.phone"/>
+    </field>
+    
+      <field 
+      property="email"
+      depends="required,email">
+      <arg0 key="DashBoardCompanyTenantForm.email"/>
+    </field>
+    
+    <field 
+      property="contactemail"
+      depends="required,email">
+      <arg0 key="DashBoardCompanyTenantForm.contactemail"/>
+    </field>
+    
+    <field 
+      property="contactmobileno"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.contactmobileno"/>
+    </field>
+    
+    <field 
+      property="address1"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.address1"/>
+    </field>
+    <field 
+      property="address2"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.address2"/>
+    </field>
+    <field 
+      property="address3"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.address3"/>
+    </field>
+    
+     <field 
+      property="pincode"
+      depends="required,integer">
+      <arg0 key="DashBoardCompanyTenantForm.pincode"/>
+    </field>
+    
+     
+     
+     <field 
+      property="country"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.country"/>
+    </field>
+    
+     <field 
+      property="purposeoflease"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.purposeoflease"/>
+    </field>
+    
+     <field 
+      property="contactname"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.contactname"/>
+    </field>
+    
+     <field 
+      property="contactphone"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.contactphone"/>
+    </field>
+    
+     <field 
+      property="contactmobileno"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.contactmobileno"/>
+    </field>
+    
+     <field 
+      property="contactemail"
+      depends="required,email">
+      <arg0 key="DashBoardCompanyTenantForm.contactemail"/>
+    </field>
+    
+     
+     <field 
+      property="frequency"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.frequency"/>
+    </field>
+    
+   
+     <field 
+      property="moveindate"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.moveindate"/>
+    </field>
+    <field 
+      property="leaseperiod"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.leaseperiod"/>
+    </field>
+   
+   <field 
+      property="billtype"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.billtype"/>
+    </field>
+   <field 
+      property="unitrent"
+      depends="required,integer">
+      <arg0 key="DashBoardCompanyTenantForm.unitrent"/>
+    </field>
+   <field 
+      property="unitdeposit"
+      depends="required,integer">
+      <arg0 key="DashBoardCompanyTenantForm.unitdeposit"/>
+    </field>
+   <field 
+      property="unitperiodfrom"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.unitperiodfrom"/>
+    </field>
+   
+    <field 
+      property="unitperiodto"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.unitperiodto"/>
+    </field>
+   
+   <field 
+      property="unitbilldate"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.unitbilldate"/>
+    </field>
+    <field 
+      property="unitduedate"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.unitduedate"/>
+    </field>
+   
+   <field 
+      property="unitlatefeedate"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.unitlatefeedate"/>
+    </field>
+    
+    <field 
+      property="unitincrement"
+      depends="required,integer">
+      <arg0 key="DashBoardCompanyTenantForm.unitincrement"/>
+    </field>
+    
+   <field 
+      property="east"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.east"/>
+    </field>
+   
+   <field 
+      property="west"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.west"/>
+    </field>
+    <field 
+      property="north"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.north"/>
+    </field>
+    <field 
+      property="south"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.south"/>
+    </field>
+     
+     <field 
+      property="notes"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.notes"/>
+    </field>
+     
+     
+      <field 
+      property="file"
+      depends="required">
+      <arg0 key="DashBoardCompanyTenantForm.file"/>
+    </field>
+    
+      
+  </form>
+  
+ 
+ 
+ 
+ 
+   
+    
+   
+    
+ <!-- End Company Tenant Validation  -->
+ 
+ <!--  Login Validation  -->
+  <form name="LoginForm">
+    <field 
+      property="username"
+      depends="required">
+      <arg0 key="LoginForm.username"/>
+    </field>
+         
+    <field    
+      property="password"
+      depends="required">
+      <arg0 key="LoginForm.password"/>
+    </field>
+    
+  </form>
+ 
+ <!--  Login Validation  -->
+ 
+ 
+ <!--  New User Form Validation -->
+  <form name="NewUserForm">
+    <field 
+      property="firstname"
+      depends="required">
+      <arg0 key="NewUserForm.firstname"/>
+    </field>
+         
+    <field    
+      property="lastname"
+      depends="required">
+      <arg0 key="NewUserForm.lastname"/>
+    </field>
+    
+    <field    
+      property="email"
+      depends="required,email">
+      <arg0 key="NewUserForm.email"/>
+    </field>
+    <field    
+      property="phoneno"
+      depends="required">
+      <arg0 key="NewUserForm.phoneno"/>
+    </field>
+  
+    <field    
+      property="address"
+      depends="required">
+      <arg0 key="NewUserForm.address"/>
+    </field>
+    
+    
+    <field    
+      property="username"
+      depends="required">
+      <arg0 key="NewUserForm.username"/>
+    </field>
+    
+    
+   
+    
+    <field    
+      property="noofproperty"
+      depends="required,integer">
+      <arg0 key="NewUserForm.noofproperty"/>
+    </field>
+    
+    <field 
+    	property="agree"
+		depends="required">
+		<arg0 key="NewUserForm.agree"/>
+	</field>
+
+  </form>
+ 
+ 
+ <!--  New  User For VAlidation End -->
+ 
+ <!--   Report -->
+ 
+ 
+ 
+  <form name="ReportForm">
+    <field 
+      property="frommonth"
+      depends="required">
+      <arg0 key="ReportForm.frommonth"/>
+    </field>
+       
+   <field 
+      property="tomonth"
+      depends="required">
+      <arg0 key="ReportForm.tomonth"/>
+    </field>
+      
+    </form>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- Edit the modify the username -->
+ 
+ 
+ 
+ 
+ <form name="ChangeUserNameForm">
+    <field 
+      property="firstname"
+      depends="required">
+      <arg0 key="ChangeUserNameForm.firstname"/>
+    </field>
+         
+    <field    
+      property="lastname"
+      depends="required">
+      <arg0 key="ChangeUserNameForm.lastname"/>
+    </field>
+    
+    <field    
+      property="email"
+      depends="required,email">
+      <arg0 key="ChangeUserNameForm.email"/>
+    </field>
+    <field    
+      property="phoneno"
+      depends="required,integer">
+      <arg0 key="ChangeUserNameForm.phoneno"/>
+    </field>
+   
+    <field    
+      property="address"
+      depends="required">
+      <arg0 key="NewUserForm.address"/>
+    </field>
+    
+    
+    <field    
+      property="username"
+      depends="required">
+      <arg0 key="ChangeUserNameForm.username"/>
+    </field>
+    
+    
+    <field    
+      property="password"
+      depends="required">
+      <arg0 key="ChangeUserNameForm.password"/>
+    </field>
+    
+    
+  </form>
+ <!-- End Edit the modify the username -->
+ 
+ <!--  Owner Form Validation -->
+ 
+ 
+  <form name="OwnersForm">
+    <field 
+      property="ownername"
+      depends="required">
+      <arg0 key="OwnersForm.ownername"/>
+    </field>
+         
+    <field    
+      property="owneremail"
+      depends="required,email">
+      <arg0 key="OwnersForm.owneremail"/>
+    </field>
+    
+    <field    
+      property="ownerhomephone"
+      depends="required,integer">
+      <arg0 key="OwnersForm.ownerhomephone"/>
+    </field>
+    <field    
+      property="bankname"
+      depends="required">
+      <arg0 key="OwnersForm.bankname"/>
+    </field>
+   
+    <field    
+      property="accountno"
+      depends="required,integer">
+      <arg0 key="OwnersForm.accountno"/>
+    </field>
+    
+    
+    <field    
+      property="ifscode"
+      depends="required">
+      <arg0 key="OwnersForm.ifscode"/>
+    </field>
+    
+    
+    <field    
+      property="ownercountry"
+      depends="required">
+      <arg0 key="OwnersForm.ownercountry"/>
+    </field>
+    
+     <field    
+      property="ownercity"
+      depends="required">
+      <arg0 key="OwnersForm.ownercity"/>
+    </field>
+    
+     <field    
+      property="ownerstate"
+      depends="required">
+      <arg0 key="OwnersForm.ownerstate"/>
+    </field>
+    
+     <field    
+      property="propertyname"
+      depends="required">
+      <arg0 key="OwnersForm.propertyname"/>
+    </field>
+    
+    
+    
+  </form>
+ 
+ <!--  Owner Form Validation -->
+ 
+ 
+ 
+ 
+ 
+ <form name="TenantRenevalForm">
+    <field 
+      property="renevaldate"
+      depends="required">
+      <arg0 key="TenantRenevalForm.renevaldate"/>
+    </field>
+    
+    <field 
+      property="renevaldateto"
+      depends="required">
+      <arg0 key="TenantRenevalForm.renevaldateto"/>
+    </field>
+    <field 
+      property="renevalbilldate"
+      depends="required">
+      <arg0 key="TenantRenevalForm.renevalbilldate"/>
+    </field>
+    <field 
+      property="renevalduedate"
+      depends="required">
+      <arg0 key="TenantRenevalForm.renevalduedate"/>
+    </field>
+    <field 
+      property="renevallatefeedate"
+      depends="required">
+      <arg0 key="TenantRenevalForm.renevallatefeedate"/>
+    </field>
+    
+     <field 
+      property="leaseperiod"
+      depends="required">
+      <arg0 key="TenantRenevalForm.leaseperiod"/>
+    </field>
+         
+  </form>
+  
+  
+ 
+ <form name="TenantCheckout">
+ 
+    <field 
+      property="checkoutdate"
+      depends="required">
+      <arg0 key="TenantCheckout.checkoutdate"/>
+    </field>
+         
+  </form>
+ 
+ <form name="TenantEditForm">
+ 
+    <field 
+      property="name"
+      depends="required">
+      <arg0 key="TenantEditForm.name"/>
+    </field>
+    
+    <field 
+      property="gender"
+      depends="required">
+      <arg0 key="TenantEditForm.gender"/>
+    </field>
+         
+    <field 
+      property="age"
+      depends="required,integer">
+      <arg0 key="TenantEditForm.age"/>
+    </field>         
+     
+     <field 
+      property="email"
+      depends="required,email">
+      <arg0 key="TenantEditForm.email"/>
+    </field>       
+         
+         
+  </form>
+ 
+ 
+ 
+ <form name="MultiUnitResidenncialEditForm">
+ 
+    <field 
+      property="residencialpropertysubtype"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.residencialpropertysubtype"/>
+    </field>
+    
+    <field 
+      property="floorname"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.floorname"/>
+    </field>
+         
+    <field 
+      property="east"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.east"/>
+    </field>         
+     
+     <field 
+      property="west"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.west"/>
+    </field>       
+         
+    <field 
+      property="north"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.north"/>
+    </field>   
+    
+    
+     <field 
+      property="south"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.south"/>
+    </field>
+    
+    
+     
+   <field 
+      property="bedrooms"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.bedrooms"/>
+    </field>   
+      
+      
+   <field 
+      property="bathrooms"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.bathrooms"/>
+    </field>
+      
+      
+      <field 
+      property="propertyno"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.propertyno"/>
+    </field>   
+      
+       <field 
+      property="address2"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.address2"/>
+    </field>   
+      
+       <field 
+      property="address3"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.address3"/>
+    </field>   
+    
+     <field 
+      property="unitnumber"
+      depends="required">
+      <arg0 key="MultiUnitResidenncialEditForm.unitnumber"/>
+    </field>  
+      
+  </form>
+ 
+
+ 
+ <form name="MultiUnitCommercialEditForm">
+ 
+    <field 
+      property="commercialpropertysubtype"
+      depends="required">
+      <arg0 key="MultiUnitCommercialEditForm.commercialpropertysubtype"/>
+    </field>
+    
+    <field 
+      property="propertyno"
+      depends="required">
+      <arg0 key="MultiUnitCommercialEditForm.propertyno"/>
+    </field>
+    
+    
+    <field 
+      property="address2"
+      depends="required">
+      <arg0 key="MultiUnitCommercialEditForm.address2"/>
+    </field>
+    
+    
+    <field 
+      property="address3"
+      depends="required">
+      <arg0 key="MultiUnitCommercialEditForm.address3"/>
+    </field>
+    
+     <field 
+      property="unitnumber"
+      depends="required">
+      <arg0 key="MultiUnitCommercialEditForm.unitnumber"/>
+    </field>
+    
+    
+     <field 
+      property="floorname"
+      depends="required">
+      <arg0 key="MultiUnitCommercialEditForm.floorname"/>
+    </field>
+    
+     <field 
+      property="east"
+      depends="required">
+      <arg0 key="MultiUnitCommercialEditForm.east"/>
+    </field>
+    
+    <field 
+      property="west"
+      depends="required">
+      <arg0 key="MultiUnitCommercialEditForm.west"/>
+    </field>
+    
+     <field 
+      property="north"
+      depends="required">
+      <arg0 key="MultiUnitCommercialEditForm.north"/>
+    </field>
+    
+     <field 
+      property="south"
+      depends="required">
+      <arg0 key="MultiUnitCommercialEditForm.south"/>
+    </field>
+    
+  </form>
+ 
+ 
+ <form name="PropertyReceiptForm">
+ 
+    <field 
+      property="propertybillno"
+      depends="required,integer">
+      <arg0 key="PropertyReceiptForm.propertybillno"/>
+    </field>
+    
+     <field 
+      property="receiptno"
+      depends="required,integer">
+      <arg0 key="PropertyReceiptForm.receiptno"/>
+    </field>
+    
+    </form>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 	<!--Validate AirWayBillFormExport--> 
+ 	<form name="AirWayBillFormExport">
+   
+    <field    
+      property="con_name"
+      depends="required">
+      <arg0 key="AirWayBillFormExport.con_name"/>
+    </field>
+    <field    
+      property="barcode"
+      depends="required,maxlength,minlength,integer">
+      <arg0 key="AirWayBillFormExport.barcode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="awb_no"
+      depends="required,maxlength,minlength,integer">
+      <arg0 key="AirWayBillFormExport.awb_no"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="consignee"
+      depends="required,maxlength">
+      <arg0 key="AirWayBillFormExport.consignee"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+    <field    
+      property="mobile1"
+      depends="required,integer,maxlength">
+      <arg0 key="AirWayBillFormExport.mobile1"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>12</var-value></var>
+    </field>
+    <field    
+      property="area1"
+      depends="required,maxlength">
+      <arg0 key="AirWayBillFormExport.area1"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+    <field    
+      property="ref_no"
+      depends="required,integer,maxlength">
+      <arg0 key="AirWayBillFormExport.ref_no"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>12</var-value></var>
+    </field>
+    <field    
+      property="pincode"
+      depends="required,maxlength,integer">
+      <arg0 key="AirWayBillFormExport.pincode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>7</var-value></var>
+    </field>
+    <field    
+      property="servicetype"
+      depends="required,maxlength">
+      <arg0 key="AirWayBillFormExport.servicetype"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+    </field>
+  </form>
+ <!--Validate Site Form-->   	
+  <form name="SiteForm">
+   
+    <field    
+      property="enterprisename"
+      depends="required">
+      <arg0 key="SiteForm.enterprisename"/>
+    </field>
+    <field    
+      property="sitename"
+      depends="required,maxlength,minlength">
+      <arg0 key="SiteForm.sitename"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="SiteForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+   <!-- <field    
+      property="mobileno"
+      depends="required,integer,maxlength">
+      <arg0 key="SiteForm.mobileno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>12</var-value></var>
+    </field>
+    <field    
+      property="phoneno1"
+      depends="integer,maxlength">
+      <arg0 key="SiteForm.phoneno1"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>12</var-value></var>
+    </field>
+    <field    
+      property="phoneno2"
+      depends="integer,maxlength">
+      <arg0 key="SiteForm.phoneno2"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>12</var-value></var>
+    </field>
+    <field    
+      property="emailid"
+      depends="email,maxlength">
+      <arg0 key="SiteForm.emailid"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+    <field    
+      property="website"
+      depends="maxlength">
+      <arg0 key="SiteForm.website"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field> -->
+  </form>
+ <!--Validate Enterprice Form-->	
+  <form name="EnterpriseForm">
+    <field    
+      property="name"
+      depends="required,maxlength,minlength">
+      <arg0 key="EnterpriseForm.name"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="EnterpriseForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="city"
+      depends="required,maxlength,minlength">
+      <arg0 key="EnterpriseForm.city"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>20</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="country"
+      depends="required,maxlength,minlength">
+      <arg0 key="EnterpriseForm.country"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>20</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="zipcode"
+      depends="required,integer,maxlength">
+      <arg0 key="EnterpriseForm.zipcode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>7</var-value></var>
+    </field>
+    
+    <field    
+      property="website"
+      depends="maxlength">
+      <arg0 key="EnterpriseForm.website"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+    <field    
+      property="email"
+      depends="email,maxlength">
+      <arg0 key="EnterpriseForm.email"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+    <field    
+      property="enterprisedetails"
+      depends="maxlength">
+      <arg0 key="EnterpriseForm.enterprisedetails"/>
+   	  <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="state"
+      depends="required,maxlength">
+      <arg0 key="EnterpriseForm.state"/>
+   	  <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>20</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+   </form>
+   <!--Validate Enterprice Form Modification-->
+   	<form name="EnterpriseFormModify">
+    <field    
+      property="name"
+      depends="required,maxlength,minlength">
+      <arg0 key="EnterpriseFormModify.name"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="EnterpriseFormModify.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="city"
+      depends="required,maxlength,minlength">
+      <arg0 key="EnterpriseFormModify.city"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>30</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="country"
+      depends="required,maxlength,minlength">
+      <arg0 key="EnterpriseFormModify.country"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>30</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="zipcode"
+      depends="integer,maxlength">
+      <arg0 key="EnterpriseFormModify.zipcode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>7</var-value></var>
+    </field>
+    <field    
+      property="mobileno"
+      depends="required,integer,maxlength">
+      <arg0 key="EnterpriseFormModify.mobileno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>12</var-value></var>
+    </field>
+    <field    
+      property="phoneno1"
+      depends="integer,maxlength">
+      <arg0 key="EnterpriseFormModify.phoneno1"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>12</var-value></var>
+    </field>
+    <field    
+      property="phoneno2"
+      depends="integer,maxlength">
+      <arg0 key="EnterpriseFormModify.phoneno2"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>12</var-value></var>
+    </field>
+    <field    
+      property="website"
+      depends="maxlength">
+      <arg0 key="EnterpriseFormModify.website"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+    <field    
+      property="email"
+      depends="email,maxlength">
+      <arg0 key="EnterpriseFormModify.email"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>12</var-value></var>
+    </field>
+    <field    
+      property="enterprisedetails"
+      depends="required,maxlength">
+      <arg0 key="EnterpriseFormModify.enterprisedetails"/>
+   	  <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+   </form>
+ <!--Validate Con_AreaForm-->  
+ <form name="Con_AreaForm">
+    <field    
+      property="area_name"
+      depends="required,maxlength">
+      <arg0 key="Con_AreaForm.area_name"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+    <field    
+      property="site_id"
+      depends="required,integer">
+      <arg0 key="Con_AreaForm.site_id"/>
+    </field>
+    <field    
+      property="pincode"
+      depends="required,integer,maxlength">
+      <arg0 key="Con_AreaForm.pincode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+ </form>
+ 
+ <!--Validate DispatchDeliveryBoyForm-->   
+ <form name="DispatchDeliveryBoyForm">
+    <field    
+      property="dis_staffname"
+      depends="required">
+      <arg0 key="DispatchDeliveryBoyForm.dis_staffname"/>
+    </field>
+    <field    
+      property="from"
+      depends="required,date">
+      <arg0 key="DispatchDeliveryBoyForm.from"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    <field    
+      property="to"
+      depends="required,date">
+      <arg0 key="DispatchDeliveryBoyForm.to"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+ </form>
+
+ <!--Validate DispatchPendingForm-->
+ <form name="DispatchPendingForm">
+   
+    <field    
+      property="dis_awb_no"
+      depends="required,integer">
+      <arg0 key="DispatchPendingForm.dis_awb_no"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="co_name"
+      depends="required">
+      <arg0 key="DispatchPendingForm.co_name"/>
+    </field>
+ </form>
+  
+ <!--Validate DispatchDeliveryForm  
+ <form name="DispatchDeliveryForm">
+   
+    <field    
+      property="dis_awb_no"
+      depends="required,integer">
+      <arg0 key="DispatchDeliveryForm.dis_awb_no"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="dis_status"
+      depends="required">
+      <arg0 key="DispatchDeliveryForm.dis_status"/>
+    </field>
+    <field    
+      property="from"
+      depends="required,date">
+      <arg0 key="DispatchDeliveryForm.from"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    <field    
+      property="to"
+      depends="required,date">
+      <arg0 key="DispatchDeliveryForm.to"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    </form>-->
+   <!--Validate DispatchReportForm
+   <form name="DispatchReportForm">
+   
+    <field    
+      property="dis_awb_no"
+      depends="required,integer">
+      <arg0 key="DispatchReportForm.dis_awb_no"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="co_name"
+      depends="required">
+      <arg0 key="DispatchReportForm.co_name"/>
+    </field>
+    <field    
+      property="from"
+      depends="required,date">
+      <arg0 key="DispatchReportForm.from"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    <field    
+      property="to"
+      depends="required,date">
+      <arg0 key="DispatchReportForm.to"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    </form>-->
+   
+ 	<!--Validate ServiceForm1-->
+ 	<form name="ServiceForm1">
+   
+    <field    
+      property="servicetypename"
+      depends="required">
+      <arg0 key="ServiceForm1.servicetypename"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>15</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="siteid"
+      depends="required">
+      <arg0 key="ServiceForm1.siteid"/>
+    </field>
+    <field    
+      property="status"
+      depends="required">
+      <arg0 key="ServiceForm1.status"/>
+    </field>
+    </form>
+    
+  <form name="ServiceFormCreate">
+     <field    
+      property="servicename"
+      depends="required">
+      <arg0 key="ServiceFormCreate.servicename"/>
+    </field>
+    <field    
+      property="description"
+      depends="required">
+      <arg0 key="ServiceFormCreate.description"/>
+    </field>
+    <field    
+      property="site_id"
+      depends="required">
+      <arg0 key="ServiceFormCreate.site_id"/>
+    </field>
+    <field    
+      property="status"
+      depends="required">
+      <arg0 key="ServiceFormCreate.status"/>
+    </field>
+  </form>
+    
+ 
+ <!-- <form name="BillCreateTestForm">
+   
+    <field    
+      property="con_fname"
+      depends="required">
+      <arg0 key="BillCreateTestForm.con_fname"/>
+    </field>
+    <field    
+      property="status"
+      depends="required">
+      <arg0 key="BillCreateTestForm.status"/>
+    </field>
+    
+  </form> -->
+    
+  <form name="AirWayBillForm">        
+    <field 
+      property="awb_no"
+      depends="required,maxlength">
+      <arg0 key="AirWayBillForm.awb_no"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>15</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+      </field>
+      
+      
+      <field    
+      property="ref_no"
+      depends="maxlength,integer">
+      <arg0 key="AirWayBillForm.ref_no"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>15</var-value></var>
+    </field>
+    <field    
+      property="mobile1"
+      depends="maxlength">
+      <arg0 key="AirWayBillForm.mobile1"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>15</var-value></var>
+    </field>
+    <field    
+      property="weight"
+      depends="required,float,maxlength">
+      <arg0 key="AirWayBillForm.weight"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+    </field>
+    
+    <field    
+      property="area1"
+      depends="required">
+      <arg0 key="AirWayBillForm.area1"/>
+    </field>
+    <field    
+      property="consignee"
+      depends="required,maxlength">
+      <arg0 key="AirWayBillForm.consignee"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>30</var-value></var>
+    </field>
+    <field    
+      property="barcode"
+      depends="required">
+      <arg0 key="AirWayBillForm.barcode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>8</var-value></var>
+    </field>
+    <field    
+      property="pincode"
+      depends="required,maxlength,minlength,integer">
+      <arg0 key="AirWayBillForm.pincode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>7</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="noofpieces"
+      depends="required,integer">
+      <arg0 key="AirWayBillForm.noofpieces"/>
+    </field>
+    
+    <field    
+      property="con_name"
+      depends="required">
+      <arg0 key="AirWayBillForm.con_name"/>
+    </field>
+    
+     <field      
+      property="service_name"
+      depends="required">
+      <arg0 key="AirWayBillForm.service_name"/>
+    </field>
+    <field    
+      property="date"
+      depends="required,date">
+      <arg0 key="AirWayBillForm.date"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    <field    
+      property="stype"
+      depends="required">
+      <arg0 key="AirWayBillForm.stype"/>
+    </field>
+    
+    
+    <field 
+      property="cadd"
+      depends="required,maxlength">
+      <arg0 key="AirWayBillForm.cadd"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>      
+      <var><var-name>maxlength</var-name><var-value>200</var-value></var>      
+    </field>
+    </form> 
+ 
+ <!--Validate Consigner_RegForm-->
+ <form name="Consigner_RegForm">
+    <field 
+      property="con_fname"
+      depends="required,maxlength">
+      <arg0 key="Consigner_RegForm.con_fname"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>20</var-value></var>
+      </field>
+      
+         <field 
+      property="desc"
+      depends="required,maxlength">
+      <arg0 key="Consigner_RegForm.desc"/>
+      
+      </field>
+      
+         
+    <field    
+      property="con_con_person"
+      depends="maxlength">
+      <arg0 key="Consigner_RegForm.con_con_person"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>20</var-value></var>
+    </field>
+    
+    <field    
+      property="con_add1"
+      depends="maxlength">
+      <arg0 key="Consigner_RegForm.con_add1"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+    </field>
+    
+    <field    
+      property="mobile_no"
+      depends="integer,maxlength">
+      <arg0 key="Consigner_RegForm.mobile_no"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+    </field>
+    
+    <field    
+      property="office1"
+      depends="integer,maxlength">
+      <arg0 key="Consigner_RegForm.office1"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+    </field>
+    
+    <field    
+      property="emailid"
+      depends="email,maxlength">
+      <arg0 key="Consigner_RegForm.emailid"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+    
+    
+ </form>
+ 
+ 
+  
+ <form name="DispatchForm">
+    
+    <field    
+      property="dis_awb_itemno"
+      depends="required,maxlength,minlength">
+      <arg0 key="DispatchForm.dis_awb_itemno"/> 
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var> 
+    </field>                                   
+    <field    
+      property="dis_staffname"
+      depends="required">
+      <arg0 key="DispatchForm.dis_staffname"/>
+    </field>
+    
+     <field    
+      property="drs_no"
+      depends="required,maxlength,integer">
+      <arg0 key="DispatchForm.drs_no"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+    </field>
+    
+   
+    
+    <field    
+      property="rec_date"
+      depends="date">
+      <arg0 key="DispatchForm.rec_date"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    
+    
+    
+    
+    <!-- <field    
+      property="tele_call"
+      depends="required">
+      <arg0 key="DispatchForm.tele_call"/>
+    </field> -->
+    
+    
+    
+    <!-- <field    
+      property="rec_time"
+      depends="required">
+      <arg0 key="DispatchForm.rec_time"/>
+    </field> -->
+  </form> 
+  
+  
+  <form name="DispatchFormReturn">
+    <field 
+      property="dis_awb_itemno"
+      depends="required,maxlength,integer">
+      <arg0 key="DispatchFormReturn.dis_awb_itemno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>20</var-value></var>
+      </field>
+    <field    
+      property="rec_date"
+      depends="required,date">
+      <arg0 key="DispatchFormReturn.rec_date"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    <field    
+      property="reason"
+      depends="required">
+      <arg0 key="DispatchFormReturn.reason"/>
+    </field>
+    <field    
+      property="con_add"
+      depends="required,maxlength">
+      <arg0 key="DispatchFormReturn.con_add"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>20</var-value></var>
+    </field>
+    <field    
+      property="remarks"
+      depends="required,maxlength">
+      <arg0 key="DispatchFormReturn.remarks"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>20</var-value></var>
+    </field>
+   </form>
+   
+   <form name="DispatchFormOutscan">
+    <field 
+      property="dis_awb_itemno"
+      depends="required,maxlength,integer">
+      <arg0 key="DispatchFormOutscan.dis_awb_itemno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>20</var-value></var>
+    </field>
+    <field    
+      property="dis_staffname"
+      depends="required">
+      <arg0 key="DispatchFormOutscan.dis_staffname"/>
+    </field>
+    <field    
+      property="dis_areaname"
+      depends="required">
+      <arg0 key="DispatchFormOutscan.dis_areaname"/>
+    </field>
+   </form>
+  
+  
+  
+  <form name="UserForm">
+    <field 
+      property="firstname"
+      depends="required,maxlength">
+      <arg0 key="UserForm.firstname"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      </field>
+    <field    
+      property="designation"
+      depends="required,maxlength">
+      <arg0 key="UserForm.designation"/>
+       <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+       <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+    <field    
+      property="occupation"
+      depends="maxlength">
+      <arg0 key="UserForm.occupation"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+       <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+    </field>
+    <field    
+      property="address"
+      depends="required,maxlength">
+      <arg0 key="UserForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+       <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+    </field>
+    <field    
+      property="department"
+      depends="required">
+      <arg0 key="UserForm.department"/>
+    </field>
+	
+        <field    
+      property="branch"
+      depends="required">
+      <arg0 key="UserForm.branch"/>
+    </field>
+	
+	<field    
+      property="sitename"
+      depends="required">
+      <arg0 key="UserForm.sitename"/>
+    </field>
+	
+	
+    </form>
+    
+    <form name="UserCreateForm">
+    <field 
+      property="username"
+      depends="required,maxlength,minlength">
+      <arg0 key="UserForm.username"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+      <var><var-name>minlength</var-name><var-value>4</var-value></var>
+    </field>
+    <field    
+      property="password"
+      depends="required,maxlength,minlength">
+      <arg0 key="UserForm.password"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>8</var-value></var>
+      <var><var-name>minlength</var-name><var-value>6</var-value></var>
+    </field>
+    <field 
+      property="firstname"
+      depends="required">
+      <arg0 key="UserCreateForm.firstname"/>
+    </field>
+    <field    
+      property="staffid"
+      depends="required">
+      <arg0 key="UserCreateForm.staffid"/>
+    </field>
+  </form>
+  
+  <form name="DeptForm">
+    
+    <field 
+      property="site_id"
+      depends="required">
+      <arg0 key="DeptForm.site_id"/>
+    </field>
+    <field 
+      property="dept_id"
+      depends="required">
+      <arg0 key="DeptForm.dept_id"/>
+    </field>
+    
+    <field    
+      property="dept_name"
+      depends="required">
+      <arg0 key="DeptForm.dept_name"/>
+    </field>	
+  	
+  </form>
+  
+  
+  <form name="PharmacyItemBillSaveForm">
+  <field 
+      property="consultdoctorname"
+      depends="required">
+      <arg0 key="PharmacyItemBillSaveForm.consultdoctorname"/>
+    </field>
+    
+    <field    
+      property="patientname"
+      depends="required">
+      <arg0 key="PharmacyItemBillSaveForm.patientname"/>
+    </field>
+  
+  
+  
+  </form>
+  <form name="CharityForm">
+    <field 
+      property="charityid"
+      depends="required,maxlength,minlength">
+      <arg0 key="CharityForm.charityid"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="charityname"
+      depends="required,maxlength,minlength">
+      <arg0 key="CharityForm.charityname"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="CharityForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+  </form>
+  
+  
+  <form name="Visit_CharityForm">
+    <field 
+      property="letterrefno"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CharityForm.letterrefno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="charityname"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CharityForm.charityname"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="coverage"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CharityForm.coverage"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="letterdate"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CharityForm.letterdate"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="approvedamount"
+      depends="required,float,maxlength,minlength">
+      <arg0 key="Visit_CharityForm.approvedamount"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="paymentmode"
+      depends="required">
+      <arg0 key="Visit_CharityForm.paymentmode"/>
+      
+    </field>
+    
+    <field    
+      property="cardno"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CharityForm.cardno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="securitycode"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CharityForm.securitycode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CharityForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="expirydate"
+      depends="required">
+      <arg0 key="Visit_CharityForm.expirydate"/>
+      </field>
+    
+  </form>
+  
+  <form name="CorporateForm">
+    <field 
+      property="corporateid"
+      depends="required,maxlength,minlength">
+      <arg0 key="CorporateForm.corporateid"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="corporatename"
+      depends="required,maxlength,minlength">
+      <arg0 key="CorporateForm.corporatename"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="CorporateForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+  </form>
+  
+  <form name="Visit_CorporateForm">
+    <field 
+      property="letterrefno"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CorporateForm.letterrefno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="corporatename"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CorporateForm.corporatename"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="employeegrade"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CorporateForm.employeegrade"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="empname"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CorporateForm.empname"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="letterdate"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CorporateForm.letterdate"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="relation_emp"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CorporateForm.relation_emp"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="approvedamount"
+      depends="required,float,maxlength,minlength">
+      <arg0 key="Visit_CorporateForm.approvedamount"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="paymentmode"
+      depends="required">
+      <arg0 key="Visit_CorporateForm.paymentmode"/>
+      
+    </field>
+    
+    <field    
+      property="cardno"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CorporateForm.cardno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="securitycode"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CorporateForm.securitycode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_CorporateForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="expirydate"
+      depends="required">
+      <arg0 key="Visit_CorporateForm.expirydate"/>
+      </field>
+    
+  </form>
+    
+    <form name="InsuranceForm">
+    <field 
+      property="insucomid"
+      depends="required,maxlength,minlength">
+      <arg0 key="InsuranceForm.insucomid"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="insucomname"
+      depends="required,maxlength,minlength">
+      <arg0 key="InsuranceForm.insucomname"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="InsuranceForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+  </form>
+  
+  
+  <form name="Visit_InsuranceForm">
+    <field 
+      property="plan"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_InsuranceForm.plan"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="insucomname"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_InsuranceForm.insucomname"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="policyno"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_InsuranceForm.policyno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="amountinsured"
+      depends="required,float,maxlength,minlength">
+      <arg0 key="Visit_InsuranceForm.amountinsured"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="approvedamount"
+      depends="required,float,maxlength,minlength">
+      <arg0 key="Visit_InsuranceForm.approvedamount"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="datecomm"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_InsuranceForm.datecomm"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field    
+      property="policydate"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_InsuranceForm.policydate"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="paymentmode"
+      depends="required">
+      <arg0 key="Visit_InsuranceForm.paymentmode"/>
+      
+    </field>
+    
+    <field    
+      property="cardno"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_InsuranceForm.cardno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="securitycode"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_InsuranceForm.securitycode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="Visit_InsuranceForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="expirydate"
+      depends="required">
+      <arg0 key="Visit_InsuranceForm.expirydate"/>
+      </field>
+    
+    
+  </form>
+  
+  
+  
+  <form name="StoreForm">
+  
+    <field 
+      property="storetype"
+      depends="required,maxlength,minlength">
+      <arg0 key="StoreForm.storetype"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="site"
+      depends="required">
+      <arg0 key="StoreForm.site"/>
+    </field>	
+  	<field    
+      property="active"
+      depends="required">
+      <arg0 key="StoreForm.active"/>
+    </field>
+    
+    <field    
+      property="department"
+      depends="required">
+      <arg0 key="StoreForm.department"/>
+    </field>
+    
+    <field    
+      property="itemtypes"
+      depends="required">
+      <arg0 key="StoreForm.itemtypes"/>
+    </field>
+    
+    <field    
+      property="transactions"
+      depends="required">
+      <arg0 key="StoreForm.transactions"/>
+    </field>
+    
+  </form>
+  
+  <form name="AdjustmentItemSaveForm">
+  
+    <field 
+      property="confirmedby"
+      depends="required">
+      <arg0 key="AdjustmentItemSaveForm.confirmedby"/>
+    </field>
+ 
+  
+    <field 
+      property="raisedby"
+      depends="required">
+      <arg0 key="AdjustmentItemSaveForm.raisedby"/>
+    </field>
+  
+  </form>
+  
+  <form name="TransferItemSaveForm">
+  
+    <field    
+      property="destination"
+      depends="required">
+      <arg0 key="TransferItemSaveForm.destination"/>
+    </field>	
+  	<field    
+      property="destinationaddress"
+      depends="required">
+      <arg0 key="TransferItemSaveForm.destinationaddress"/>
+    </field>
+    
+    <field    
+      property="mobileno"
+      depends="integer,required">
+      <arg0 key="TransferItemSaveForm.mobileno"/>
+    </field>
+    
+    <field    
+      property="contact_person"
+      depends="required">
+      <arg0 key="TransferItemSaveForm.contact_person"/>
+    </field>
+    
+    <field    
+      property="raisedby"
+      depends="required">
+      <arg0 key="TransferItemSaveForm.raisedby"/>
+    </field>
+    
+  </form>
+  
+  <form name="PurchaseOrderForm">
+  
+    
+  <field 
+      property="site"
+      depends="required">
+      <arg0 key="PurchaseOrderForm.site"/>
+    </field>
+    <field 
+      property="vendorname"
+      depends="required">
+      <arg0 key="PurchaseOrderForm.vendorname"/>
+    </field>
+    <field 
+      property="itemname"
+      depends="required">
+      <arg0 key="PurchaseOrderForm.itemname"/>
+    </field>
+    <field 
+      property="quantity"
+      depends="required,integer,maxlength,minlength">
+      <arg0 key="PurchaseOrderForm.quantity"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field 
+      property="uom"
+      depends="required">
+      <arg0 key="PurchaseOrderForm.uom"/>
+    </field>
+    
+    
+    <field 
+      property="rate"
+      depends="required,float,maxlength,minlength">
+      <arg0 key="PurchaseOrderForm.rate"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    <field 
+      property="deliverydate"
+      depends="required">
+      <arg0 key="PurchaseOrderForm.deliverydate"/>
+    </field>
+    
+  
+  </form>
+  <form name="VendorForm">
+  
+    <field 
+      property="name"
+      depends="required,maxlength,minlength">
+      <arg0 key="VendorForm.name"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="VendorForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>256</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>	
+  	<field    
+      property="iso"
+      depends="required">
+      <arg0 key="VendorForm.iso"/>
+    </field>
+    
+    <field    
+      property="city"
+      depends="required,maxlength,minlength">
+      <arg0 key="VendorForm.city"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>50</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="state"
+      depends="required,maxlength,minlength">
+      <arg0 key="VendorForm.state"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>256</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="country"
+      depends="required,maxlength,minlength">
+      <arg0 key="VendorForm.country"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="phone1"
+      depends="required,maxlength,minlength">
+      <arg0 key="VendorForm.phone1"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="itemtype"
+      depends="required">
+      <arg0 key="VendorForm.itemtype"/>
+    </field>
+    
+    <field    
+      property="contact_per"
+      depends="required,maxlength,minlength">
+      <arg0 key="VendorForm.contact_per"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="active"
+      depends="required">
+      <arg0 key="VendorForm.active"/>
+    </field>
+    
+  </form>
+  
+  <form name="PurchaseRequisitionForm">
+  
+    
+  <field 
+      property="site"
+      depends="required">
+      <arg0 key="PurchaseRequisitionForm.site"/>
+    </field>
+    <field 
+      property="store"
+      depends="required">
+      <arg0 key="PurchaseRequisitionForm.store"/>
+    </field>
+    <field 
+      property="itemname"
+      depends="required">
+      <arg0 key="PurchaseRequisitionForm.itemname"/>
+    </field>
+  
+  <field 
+      property="purchasedept"
+      depends="required">
+      <arg0 key="PurchaseRequisitionForm.purchasedept"/>
+    </field>
+  
+  <field 
+      property="quantity"
+      depends="required,integer,maxlength,minlength">
+      <arg0 key="PurchaseRequisitionForm.quantity"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>11</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field 
+      property="preparedby"
+      depends="required,maxlength,minlength">
+      <arg0 key="PurchaseRequisitionForm.preparedby"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field 
+      property="manf_name"
+      depends="required,maxlength,minlength">
+      <arg0 key="PurchaseRequisitionForm.manf_name"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+  
+  <field 
+      property="requiredon"
+      depends="required">
+      <arg0 key="PurchaseRequisitionForm.requiredon"/>
+    </field>
+       
+    </form>
+  
+  
+  
+  
+  
+  
+  <form name="WardForm">
+  
+    <field 
+      property="wardid"
+      depends="required">
+      <arg0 key="WardForm.wardid"/>
+    </field>
+    
+    <field    
+      property="wardname"
+      depends="required">
+      <arg0 key="WardForm.wardname"/>
+    </field>	
+  	<field    
+      property="dept_name"
+      depends="required">
+      <arg0 key="WardForm.dept_name"/>
+    </field>
+    
+  </form>
+  
+  <form name="RoleForm">
+    
+    <field 
+      property="rolename"
+      depends="required">
+      <arg0 key="RoleForm.rolename"/>
+    </field>
+    
+    <field 
+      property="username"
+      depends="required">
+      <arg0 key="RoleForm.username"/>
+    </field>
+    
+  </form>
+  
+  <form name="RoleCreationForm">
+  
+    <field 
+      property="rolename"
+      depends="required">
+      <arg0 key="RoleCreationForm.rolename"/>
+    </field>
+    
+    <field 
+      property="description"
+      depends="required">
+      <arg0 key="RoleCreationForm.description"/>
+    </field>
+   	   
+  </form>
+  
+   <form name="PrefixForm">
+   	
+   	
+   	<field 
+      property="itemtypes"
+      depends="required">
+      <arg0 key="PrefixForm.itemtypes"/>
+    </field>
+  <field 
+      property="prefix"
+      depends="required">
+      <arg0 key="PrefixForm.prefix"/>
+    </field>
+  </form>
+  
+  <form name="ItemGroupHierarchyForm">
+  <field 
+      property="itemtype"
+      depends="required">
+      <arg0 key="ItemGroupHierarchyForm.itemtype"/>
+    </field>
+  <field 
+      property="itemgroup"
+      depends="required,maxlength">
+      <arg0 key="ItemGroupHierarchyForm.itemgroup"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>10</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+  <field 
+      property="active"
+      depends="required">
+      <arg0 key="ItemGroupHierarchyForm.active"/>
+    </field>
+  
+  </form>
+  
+  
+  <form name="GRNForm">
+  
+    <field 
+      property="grn_date"
+      depends="required">
+      <arg0 key="GRNForm.grn_date"/>
+    </field>
+  
+  <field 
+      property="site"
+      depends="required">
+      <arg0 key="GRNForm.site"/>
+    </field>
+    
+  <!--  <field 
+      property="pono"
+      depends="required,maxlength,minlength">
+      <arg0 key="GRNForm.pono"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field 
+      property="dcno"
+      depends="required,maxlength,minlength">
+      <arg0 key="GRNForm.dcno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>25</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field> -->
+    
+    <field 
+      property="vendorname"
+      depends="required">
+      <arg0 key="GRNForm.vendorname"/>
+    </field>
+    
+    <field 
+      property="invoiceno"
+      depends="required">
+      <arg0 key="GRNForm.invoiceno"/>
+    </field>
+    
+    <field 
+      property="total"
+      depends="required,float">
+      <arg0 key="GRNForm.total"/>
+    </field>
+    
+    
+  </form>
+  
+  <form name="Inv_ItemForm">
+  
+      
+    <field 
+      property="itemcode"
+      depends="required">
+      <arg0 key="Inv_ItemForm.itemcode"/>
+    </field>
+    
+    <field 
+      property="itemname"
+      depends="required">
+      <arg0 key="Inv_ItemForm.itemname"/>
+    </field>
+    
+    <field 
+      property="expirydate"
+      depends="required">
+      <arg0 key="Inv_ItemForm.expirydate"/>
+    </field>
+    
+    
+    
+    
+    
+    <field 
+      property="baseuom"
+      depends="required">
+      <arg0 key="Inv_ItemForm.baseuom"/>
+    </field>
+    <field 
+      property="purprice"
+      depends="required">
+      <arg0 key="Inv_ItemForm.purprice"/>
+    </field>
+    <field 
+      property="cost"
+      depends="required">
+      <arg0 key="Inv_ItemForm.cost"/>
+    </field>
+    
+    <field 
+      property="initialstock"
+      depends="required,mask">
+      <arg0 key="Inv_ItemForm.initialstock"/>
+      <var>
+        <var-name>mask</var-name>
+        <var-value>^[0-9]*$</var-value>
+    </var>
+    </field>
+   
+    
+  </form>
+  
+  
+  
+  
+  
+  <form name="TaskForm">
+  
+    <field 
+      property="rolename"
+      depends="required">
+      <arg0 key="TaskForm.rolename"/>
+    </field>
+  </form>
+  
+  <form name="TaskCreationForm">
+  
+    <field 
+      property="taskname"
+      depends="required">
+      <arg0 key="TaskCreationForm.taskname"/>
+    </field>
+    
+    <field 
+      property="short_desc"
+      depends="required">
+      <arg0 key="TaskCreationForm.short_desc"/>
+    </field>
+  </form>
+  
+  <form name="ServiceForm">
+  
+    <field 
+      property="servicename"
+      depends="required">
+      <arg0 key="ServiceForm.servicename"/>
+    </field>
+    
+    <field 
+      property="description"
+      depends="required">
+      <arg0 key="ServiceForm.description"/>
+    </field>
+    
+    <field 
+      property="cost"
+      depends="integer,required">
+      <arg0 key="ServiceForm.cost"/>
+    </field>
+   	<field 
+      property="servicetype"
+      depends="required">
+      <arg0 key="ServiceForm.servicetype"/>
+    </field>
+    <field 
+      property="deptname"
+      depends="required">
+      <arg0 key="ServiceForm.deptname"/>
+    </field>
+  </form>
+  
+  <form name="BedForm">
+  
+    <field 
+      property="bedid"
+      depends="required">
+      <arg0 key="BedForm.bedid"/>
+    </field>
+    
+    <field 
+      property="bedname"
+      depends="required">
+      <arg0 key="BedForm.bedname"/>
+    </field>
+    
+    <field 
+      property="bedtypeprice"
+      depends="float,required">
+      <arg0 key="BedForm.bedtypeprice"/>
+    </field>
+   	<field 
+      property="bedtype"
+      depends="required">
+      <arg0 key="BedForm.bedtype"/>
+    </field>
+    <field 
+      property="wardid"
+      depends="required">
+      <arg0 key="BedForm.wardid"/>
+    </field>
+    
+  </form>
+  
+  <form name="PanelForm">
+  
+    <field 
+      property="panelname"
+      depends="required">
+      <arg0 key="PanelForm.panelname"/>
+    </field>
+    
+    <field 
+      property="department"
+      depends="required">
+      <arg0 key="PanelForm.department"/>
+    </field>
+    
+  </form>
+  
+  <form name="EquipmentForm">
+  
+    <field 
+      property="eqname"
+      depends="required">
+      <arg0 key="EquipmentForm.eqname"/>
+    </field>
+    
+    <field 
+      property="eqtype"
+      depends="required">
+      <arg0 key="EquipmentForm.eqtype"/>
+    </field>
+    
+    
+    <field 
+      property="eqdesc"
+      depends="required">
+      <arg0 key="EquipmentForm.eqdesc"/>
+    </field>
+    
+    <field 
+      property="site"
+      depends="required">
+      <arg0 key="EquipmentForm.site"/>
+    </field>
+    
+    <field 
+      property="billcost"
+      depends="float,required">
+      <arg0 key="EquipmentForm.billcost"/>
+    </field>
+   	
+   	<field 
+      property="store"
+      depends="required">
+      <arg0 key="EquipmentForm.store"/>
+    </field>
+    <field 
+      property="active"
+      depends="required">
+      <arg0 key="EquipmentForm.active"/>
+    </field>
+    <field 
+      property="billinf"
+      depends="required">
+      <arg0 key="EquipmentForm.billinf"/>
+    </field>
+    
+  </form>
+  
+  <form name="ComponentForm">
+  
+    <field 
+      property="cname"
+      depends="required">
+      <arg0 key="ComponentForm.cname"/>
+    </field>
+    
+    
+    
+    <field 
+      property="cdesc"
+      depends="required">
+      <arg0 key="ComponentForm.cdesc"/>
+    </field>
+    
+    <field 
+      property="shelflife"
+      depends="required">
+      <arg0 key="ComponentForm.shelflife"/>
+    </field>
+    
+    <field 
+      property="volume"
+      depends="float,required">
+      <arg0 key="ComponentForm.volume"/>
+    </field>
+   	
+   	<field 
+      property="minstock"
+      depends="required">
+      <arg0 key="ComponentForm.minstock"/>
+    </field>
+    
+    <field 
+      property="cmatch"
+      depends="float,required">
+      <arg0 key="ComponentForm.cmatch"/>
+    </field>
+   	
+   	<field 
+      property="aint"
+      depends="required">
+      <arg0 key="ComponentForm.aint"/>
+    </field>
+    <field 
+      property="billd"
+      depends="required">
+      <arg0 key="ComponentForm.billd"/>
+    </field>
+    <field 
+      property="active"
+      depends="required">
+      <arg0 key="ComponentForm.active"/>
+    </field>
+    
+  </form>
+  
+  <form name="MaterialForm">
+      
+    <field 
+      property="itemname"
+      depends="required">
+      <arg0 key="MaterialForm.itemname"/>
+    </field>
+    
+    <field 
+      property="manfname"
+      depends="required">
+      <arg0 key="MaterialForm.manfname"/>
+    </field>
+    
+    <field 
+      property="expirydate"
+      depends="required,date">
+      <arg0 key="MaterialForm.expirydate"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    
+   <field 
+      property="saleprice"
+      depends="required">
+      <arg0 key="MaterialForm.saleprice"/>
+    </field>
+    
+    <field 
+      property="max"
+      depends="float,required">
+      <arg0 key="MaterialForm.max"/>
+    </field>
+   	
+   	<field 
+      property="min"
+      depends="float,required">
+      <arg0 key="MaterialForm.min"/>
+    </field>
+  
+  </form>
+  
+  <form name="BloodOrderForm">
+    <field 
+      property="b_comp"
+      depends="required">
+      <arg0 key="BloodOrderForm.b_comp"/>
+    </field>
+         
+    <field    
+      property="b_quantity"
+      depends="float,required">
+      <arg0 key="BloodOrderForm.b_quantity"/>
+    </field>
+    <field 
+      property="b_bank"
+      depends="required">
+      <arg0 key="BloodOrderForm.b_bank"/>
+    </field>
+         
+    <field    
+      property="b_delivery"
+      depends="required">
+      <arg0 key="BloodOrderForm.b_delivery"/>
+    </field>
+    
+  </form>
+  
+  <form name="MaterialOrderForm">
+    
+    <field 
+      property="m_store"
+      depends="required">
+      <arg0 key="MaterialOrderForm.m_store"/>
+    </field>
+         
+    <field    
+      property="m_delivery"
+      depends="required">
+      <arg0 key="MaterialOrderForm.m_delivery"/>
+    </field>
+  </form>
+  
+  <form name="EquipmentOrderForm">
+    <field 
+      property="equipment"
+      depends="required">
+      <arg0 key="EquipmentOrderForm.equipment"/>
+    </field>
+         
+    <field    
+      property="e_quantity"
+      depends="integer,required">
+      <arg0 key="EquipmentOrderForm.e_quantity"/>
+    </field>
+    <field 
+      property="e_store"
+      depends="required">
+      <arg0 key="EquipmentOrderForm.e_store"/>
+    </field>
+         
+    <field    
+      property="e_delivery"
+      depends="required">
+      <arg0 key="EquipmentOrderForm.e_delivery"/>
+    </field>
+    
+  </form>
+  
+  <form name="PanelOrderForm">
+    <field 
+      property="panel"
+      depends="required">
+      <arg0 key="PanelOrderForm.panel"/>
+    </field>
+         
+  </form>
+  
+  <form name="ServiceOrderForm">
+    <field 
+      property="service"
+      depends="required">
+      <arg0 key="ServiceOrderForm.service"/>
+    </field>
+         
+  </form>
+  
+ 
+  
+  <form name="NewRegForm">
+    <field 
+      property="firstname"
+      depends="required,mask">
+      <arg0 key="NewRegForm.firstname"/>
+      <var>
+        <var-name>mask</var-name>
+        <var-value>^[a-zA-Z]*$</var-value>
+    </var>
+    </field>
+         
+    <!--<field    
+      property="lastname"
+      depends="required,mask">
+      <arg0 key="NewRegForm.lastname"/>
+      <var>
+        <var-name>mask</var-name>
+        <var-value>^[a-zA-Z]*$</var-value>
+    </var>
+    </field>
+    
+    <field    
+      property="guardianname"
+      depends="required,mask">
+      <arg0 key="NewRegForm.guardianname"/>
+      <var>
+        <var-name>mask</var-name>
+        <var-value>^[a-zA-Z]*$</var-value>
+    </var>
+    </field>
+    <field    
+      property="year"
+      depends="required,date">
+      <arg0 key="NewRegForm.year"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    
+    <field    
+      property="address"
+      depends="required">
+      <arg0 key="NewRegForm.address"/>
+    </field>
+     
+    <field    
+      property="state"
+      depends="required">
+      <arg0 key="NewRegForm.state"/>
+    </field>
+    
+    <field    
+      property="country"
+      depends="required">
+      <arg0 key="NewRegForm.country"/>
+    </field>-->
+    
+    <field    
+      property="age"
+      depends="integer,required">
+      <arg0 key="NewRegForm.age"/>
+    </field>     
+     <field    
+      property="sex"
+      depends="required">
+      <arg0 key="NewRegForm.sex"/>
+    </field>
+    <field    
+      property="consdoctor"
+      depends="required">
+      <arg0 key="NewRegForm.consdoctor"/>
+    </field>
+    <field    
+      property="visittype"
+      depends="required">
+      <arg0 key="NewRegForm.visittype"/>
+    </field>
+    <field    
+      property="department"
+      depends="required">
+      <arg0 key="NewRegForm.department"/>
+    </field>
+    <!-- <field    
+      property="paidamt"
+      depends="float,required">
+      <arg0 key="NewRegForm.paidamt"/>
+    </field> -->
+    
+  </form>
+  
+  <form name="VisitForm">
+    <field 
+      property="visitno"
+      depends="required">
+      <arg0 key="VisitForm.visitno"/>
+    </field>
+   
+   <field 
+      property="patientcategory"
+      depends="required">
+      <arg0 key="VisitForm.patientcategory"/>
+    </field>
+    
+   <field 
+      property="visittype"
+      depends="required">
+      <arg0 key="VisitForm.visittype"/>
+  </field>
+  
+  <field 
+      property="consdoctor"
+      depends="required">
+      <arg0 key="VisitForm.consdoctor"/>
+  </field>
+  
+  <field 
+      property="department"
+      depends="required">
+      <arg0 key="VisitForm.department"/>
+    </field>
+   
+   
+ <!-- <field 
+      property="date"
+      depends="required,date">
+      <arg0 key="VisitForm.date"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+   
+  <field 
+      property="year1"
+      depends="required,date">
+      <arg0 key="VisitForm.year1"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>-->
+           
+  </form>   
+    
+  <form name="DischargeForm">
+    
+    <field 
+      property="investigationresult"
+      depends="required">
+      <arg0 key="DischargeForm.investigationresult"/>
+    </field>
+    
+    <field 
+      property="medicationofdischarge"
+      depends="required">
+      <arg0 key="DischargeForm.medicationofdischarge"/>
+    </field>
+    
+    <field 
+      property="title"
+      depends="required">
+      <arg0 key="DischargeForm.title"/>
+    </field>
+    <field 
+      property="doctor1"
+      depends="required">
+      <arg0 key="DischargeForm.doctor1"/>
+    </field>
+    
+    <field 
+      property="instructions"
+      depends="required">
+      <arg0 key="DischargeForm.instructions"/>
+    </field>
+    <field 
+      property="compliantsofreporting"
+      depends="required">
+      <arg0 key="DischargeForm.compliantsofreporting"/>
+    </field>
+    
+    <field 
+      property="historyofpresentillness"
+      depends="required">
+      <arg0 key="DischargeForm.historyofpresentillness"/>
+    </field>
+    
+    <field 
+      property="pasthistory"
+      depends="required">
+      <arg0 key="DischargeForm.pasthistory"/>
+    </field>
+    <field 
+      property="personalhistory"
+      depends="required">
+      <arg0 key="DischargeForm.personalhistory"/>
+    </field>
+    
+    <field 
+      property="psychologicalhistory"
+      depends="required">
+      <arg0 key="DischargeForm.psychologicalhistory"/>
+    </field>
+    <field 
+      property="menstrualhistory"
+      depends="required">
+      <arg0 key="DischargeForm.menstrualhistory"/>
+    </field>
+    
+    <field 
+      property="treatmenthistory"
+      depends="required">
+      <arg0 key="DischargeForm.treatmenthistory"/>
+    </field>
+    
+  </form>   
+  
+  <form name="DeathForm">
+    
+    <field 
+      property="time"
+      depends="integer,required">
+      <arg0 key="DeathForm.time"/>
+    </field>
+    
+    <field 
+      property="deathdetails"
+      depends="required">
+      <arg0 key="DeathForm.deathdetails"/>
+    </field>
+    
+    <field 
+      property="causeofdeath"
+      depends="required">
+      <arg0 key="DeathForm.causeofdeath"/>
+    </field>
+    <field 
+      property="deathyear"
+      depends="required,date">
+      <arg0 key="DeathForm.deathyear"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    
+    <field 
+      property="consdoctor"
+      depends="required">
+      <arg0 key="DeathForm.consdoctor"/>
+    </field>
+    
+    <field 
+      property="autopsydone"
+      depends="required">
+      <arg0 key="DeathForm.autopsydone"/>
+    </field>
+    
+    </form> 
+  
+  <form name="BirthForm">
+    
+   <!-- <field 
+      property="childfirstname"
+      depends="required,mask">
+      <arg0 key="BirthForm.childfirstname"/>
+      <var>
+        <var-name>mask</var-name>
+        <var-value>^[a-zA-Z]*$</var-value>
+    </var>
+    </field>
+    
+    <field 
+      property="childlastname"
+      depends="required,mask">
+      <arg0 key="BirthForm.childlastname"/>
+      <var>
+        <var-name>mask</var-name>
+        <var-value>^[a-zA-Z]*$</var-value>
+    </var>
+    </field>-->
+    
+    <field 
+      property="timeofbirth"
+      depends="required">
+      <arg0 key="BirthForm.timeofbirth"/>
+    </field>
+    
+    <field 
+      property="birthplace"
+      depends="required">
+      <arg0 key="BirthForm.birthplace"/>
+      </field>
+    <field 
+      property="year"
+      depends="required,date">
+      <arg0 key="DeathForm.year"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    
+    <field 
+      property="sex"
+      depends="required">
+      <arg0 key="BirthForm.sex"/>
+    </field>
+    <field 
+      property="typeofdelivery"
+      depends="required">
+      <arg0 key="BirthForm.typeofdelivery"/>
+    </field>
+    
+  </form>   
+   
+  <form name="EmergencyForm">
+    
+    <field 
+      property="guardianname"
+      depends="required">
+      <arg0 key="EmergencyForm.guardianname"/>
+    </field>
+    <field 
+      property="sex"
+      depends="required">
+      <arg0 key="EmergencyForm.sex"/>
+    </field>
+    <field 
+      property="visittype"
+      depends="required">
+      <arg0 key="EmergencyForm.visittype"/>
+    </field>
+    
+    
+  </form>  
+  
+<form name="TransactionForm">
+    
+    <field 
+      property="trans_name"
+      depends="required">
+      <arg0 key="TransactionForm.trans_name"/>
+    </field>
+    <field 
+      property="trans_time"
+      depends="required">
+      <arg0 key="TransactionForm.trans_time"/>
+    </field>
+    <field 
+      property="trans_date"
+      depends="required,date">
+      <arg0 key="TransactionForm.trans_date"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    <field 
+      property="trans_amount"
+      depends="float,required">
+      <arg0 key="TransactionForm.trans_amount"/>
+    </field>
+    <field 
+      property="raisedby"
+      depends="required">
+      <arg0 key="TransactionForm.raisedby"/>
+    </field>
+    <field 
+      property="approvedby"
+      depends="required">
+      <arg0 key="TransactionForm.approvedby"/>
+    </field>
+    <field 
+      property="type"
+      depends="required">
+      <arg0 key="TransactionForm.type"/>
+    </field>
+    <field 
+      property="reason"
+      depends="required">
+      <arg0 key="TransactionForm.reason"/>
+    </field>
+       
+    
+  </form> 
+
+
+<form name="TransactionListForm">
+    
+    <field 
+      property="trans_name"
+      depends="required">
+      <arg0 key="TransactionListForm.trans_name"/>
+    </field>
+</form>
+   
+  <form name="AdvanceForm">
+  
+    <field 
+      property="cheque_date"
+      depends="required">
+      <arg0 key="AdvanceForm.cheque_date"/>
+      
+    </field>
+  
+    <field 
+      property="advanceamount"
+      depends="float,required">
+      <arg0 key="AdvanceForm.advanceamount"/>
+    </field>
+    
+    <field 
+      property="payername"
+      depends="required">
+      <arg0 key="AdvanceForm.payername"/>
+    </field>
+    <field 
+      property="payertype"
+      depends="required">
+      <arg0 key="AdvanceForm.payertype"/>
+    </field>
+    
+    <field 
+      property="chequeno"
+      depends="integer,required">
+      <arg0 key="AdvanceForm.chequeno"/>
+    </field>
+   	
+   	<field 
+      property="bank_name"
+      depends="required">
+      <arg0 key="AdvanceForm.bank_name"/>
+    </field>
+    <field    
+      property="cardno"
+      depends="required,maxlength,minlength">
+      <arg0 key="AdvanceForm.cardno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="securitycode"
+      depends="required,maxlength,minlength">
+      <arg0 key="AdvanceForm.securitycode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="AdvanceForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="expirydate"
+      depends="required">
+      <arg0 key="AdvanceForm.expirydate"/>
+      </field>
+    
+    
+    
+  </form>
+  
+  <form name="AdjustmentForm">
+  
+    
+    <field 
+      property="pendingamount"
+      depends="float,required">
+      <arg0 key="AdjustmentForm.pendingamount"/>
+    </field>
+    
+    <field 
+      property="excessamount"
+      depends="float,required">
+      <arg0 key="AdjustmentForm.excessamount"/>
+    </field>
+   	
+   	<field 
+      property="narration"
+      depends="required">
+      <arg0 key="AdjustmentForm.narration"/>
+    </field>
+    
+    
+  </form>
+  
+  <form name="RefundForm">
+  
+    <field 
+      property="chequedate"
+      depends="date">
+      <arg0 key="RefundForm.chequedate"/>
+      <var><var-name>datePattern</var-name>
+      <var-value>yyyy/MM/dd/</var-value></var>
+    </field>
+    
+    <field 
+      property="chequeno"
+      depends="integer">
+      <arg0 key="RefundForm.chequeno"/>
+    </field>
+  
+    <field 
+      property="refundamt"
+      depends="float,required">
+      <arg0 key="RefundForm.refundamt"/>
+    </field>
+    <field 
+      property="refundto"
+      depends="required">
+      <arg0 key="RefundForm.refundto"/>
+    </field>
+    <field 
+      property="refundagainst"
+      depends="required">
+      <arg0 key="RefundForm.refundagainst"/>
+    </field>
+    <field 
+      property="modeofpayment"
+      depends="required">
+      <arg0 key="RefundForm.modeofpayment"/>
+    </field>
+    
+    <!-- <field 
+      property="ref_receivername"
+      depends="required">
+      <arg0 key="RefundForm.ref_receivername"/>
+    </field> 
+    
+    <field 
+      property="ref_against_id"
+      depends="required">
+      <arg0 key="RefundForm.ref_against_id"/>
+    </field>
+   	
+   	<field 
+      property="bankname"
+      depends="required">
+      <arg0 key="RefundForm.bankname"/>
+    </field> -->
+    
+    
+  </form>
+  
+  <form name="ReceiptForm">
+  
+    <field 
+      property="cheque_date"
+      depends="required">
+      <arg0 key="ReceiptForm.cheque_date"/>
+      
+    </field>
+    
+    <field 
+      property="chequeno"
+      depends="integer,required">
+      <arg0 key="ReceiptForm.chequeno"/>
+    </field>
+    
+     <field 
+      property="payertype"
+      depends="required">
+      <arg0 key="ReceiptForm.payertype"/>
+    </field>
+    <field 
+      property="paymentmode"
+      depends="required">
+      <arg0 key="ReceiptForm.paymentmode"/>
+    </field>
+    
+    <field 
+      property="rec_amt"
+      depends="float,required">
+      <arg0 key="ReceiptForm.rec_amt"/>
+    </field>
+    
+    <field 
+      property="payername"
+      depends="required">
+      <arg0 key="ReceiptForm.payername"/>
+    </field>
+    
+    <field 
+      property="bank_name"
+      depends="required">
+      <arg0 key="ReceiptForm.bank_name"/>
+    </field>
+    
+    <field    
+      property="cardno"
+      depends="required,maxlength,minlength">
+      <arg0 key="ReceiptForm.cardno"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="securitycode"
+      depends="required,maxlength,minlength">
+      <arg0 key="ReceiptForm.securitycode"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>100</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="address"
+      depends="required,maxlength,minlength">
+      <arg0 key="ReceiptForm.address"/>
+      <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+      <arg2 name="minlength" key="${var:minlength}" resource="false"/>
+      <var><var-name>maxlength</var-name><var-value>255</var-value></var>
+      <var><var-name>minlength</var-name><var-value>1</var-value></var>
+    </field>
+    
+    <field    
+      property="expirydate"
+      depends="required">
+      <arg0 key="ReceiptForm.expirydate"/>
+      </field>
+    
+    
+  </form>
+  
+  <form name="BillCreateForm">
+  
+    <field 
+      property="discount"
+      depends="float,required">
+      <arg0 key="BillCreateForm.discount"/>
+    </field>
+    
+    <field 
+      property="tax"
+      depends="float,required">
+      <arg0 key="BillCreateForm.tax"/>
+    </field>
+  
+    <field 
+      property="misc_charge"
+      depends="float,required">
+      <arg0 key="BillCreateForm.misc_charge"/>
+    </field>
+    
+    <field 
+      property="carddiscount"
+      depends="required">
+      <arg0 key="BillCreateForm.carddiscount"/>
+    </field>
+    
+    <field 
+      property="gen_advanceamount"
+      depends="float,required">
+      <arg0 key="BillCreateForm.gen_advanceamount"/>
+    </field>
+    
+    <field 
+      property="totalamtrounded"
+      depends="float,required">
+      <arg0 key="BillCreateForm.totalamtrounded"/>
+    </field>
+    
+    
+  </form>
+  
+  <form name="Bill_ItemForm">
+  
+    <field 
+      property="oyear"
+      depends="required">
+      <arg0 key="Bill_ItemForm.oyear"/>
+    </field>
+    
+    <field 
+      property="syear"
+      depends="required">
+      <arg0 key="Bill_ItemForm.syear"/>
+    </field>
+    
+    <field 
+      property="eyear"
+      depends="required">
+      <arg0 key="Bill_ItemForm.eyear"/>
+    </field>
+  
+    <field 
+      property="rate"
+      depends="float,required">
+      <arg0 key="Bill_ItemForm.rate"/>
+    </field>
+    
+    <field 
+      property="servicename"
+      depends="required">
+      <arg0 key="Bill_ItemForm.servicename"/>
+    </field>
+  </form>
+  
+  <form name="ServiceForm2">
+   <field 
+      property="bmrfrom"
+      depends="required">
+      <arg0 key="ServiceForm2.bmrfrom"/>
+    </field>
+    
+   
+    <field 
+      property="bmrto"
+      depends="required">
+      <arg0 key="ServiceForm2.bmrto"/>
+    </field>
+    
+     <field 
+      property="barfrom"
+      depends="required">
+      <arg0 key="ServiceForm2.barfrom"/>
+    </field>
+    
+  </form>
+  
+  
+    
+    
+  
+ </formset>
+</form-validation>

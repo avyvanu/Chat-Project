@@ -1,0 +1,44 @@
+
+CREATE TABLE `user` (
+  `user_oid` int(15) NOT NULL auto_increment,
+  `name` varchar(500) NOT NULL,
+  `emailAddress` varchar(500) NOT NULL,  
+  `phoneNo` varchar(500) NOT NULL,  
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `status` varchar(50) NOT NULL,   
+  PRIMARY KEY  (`user_oid`)
+);
+
+
+
+CREATE TABLE `public` (
+  `public_oid` int(15) NOT NULL auto_increment,
+  `publicName` varchar(500) NOT NULL,
+  `publicEmail` varchar(500) NOT NULL,  
+  `publicPhoneNo` varchar(500) NOT NULL,  
+  `message` varchar(2000) NOT NULL,
+  `date` date NOT NULL,
+  `timeIn` time NOT NULL,
+  `timeOut` time NOT NULL,
+  `status` varchar(50) NOT NULL,   
+  PRIMARY KEY  (`public_oid`)
+);
+
+
+
+CREATE TABLE `chatmessage` (
+  `chatMessage_oid` int(15) NOT NULL auto_increment,
+  `chatMessage` varchar(5000) NOT NULL,
+  `chatBy` varchar(50) NOT NULL,
+  `chatDate` date NOT NULL,
+   `timeIn` time NOT NULL,
+  `publicId` int(15) NOT NULL,   
+  PRIMARY KEY  (`chatMessage_oid`),
+  FOREIGN KEY (publicId)
+  REFERENCES public(public_oid)
+);
+
+	
+	
+

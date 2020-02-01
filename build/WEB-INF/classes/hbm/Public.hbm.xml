@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="relationship.persistence.PublicPersistence" table="public">
+		<id name="public_oid" type="int" column="public_oid">
+			<generator class="native" />
+		</id>
+		<property name="publicName" column="publicName" type="string" />
+		<property name="publicEmail" column="publicEmail" type="string"/>
+		<property name="publicPhoneNo" column="publicPhoneNo" type="string"/>
+		<property name="message" column="message" type="string"/>	
+		<property name="date" column="date" type="date"/>	
+		<property name="timeIn" column="timeIn" type="time"/>
+		<property name="timeOut" column="timeOut" type="time"/>
+		<property name="status" column="status" type="string"/>
+		
+	</class>
+	
+</hibernate-mapping>

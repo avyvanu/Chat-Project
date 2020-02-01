@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="relationship.persistence.UserPersistence" table="user">
+		<id name="user_oid" type="int" column="user_oid">
+			<generator class="native" />
+		</id>
+		<property name="name" column="name" type="string" />
+		<property name="emailAddress" column="emailAddress" type="string"/>
+		<property name="phoneNo" column="phoneNo" type="string"/>
+		<property name="username" column="username" type="string"/>		
+		<property name="password" column="password" type="string"/>
+		<property name="status" column="status" type="string"/>
+	</class>
+	
+</hibernate-mapping>
